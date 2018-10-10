@@ -16,7 +16,7 @@ public function getType(): array{
         $isOutOfRange = true;
         array_push($answer['path'],'16');}
     array_push($answer['path'],'19');
-    if($this->B < 1 && $this->B > 200){ 
+    if($this->B < 1 || $this->B > 200){ 
         $answer['answer'] = 'B '.$answer['answer'];
         $isOutOfRange = True;
         array_push($answer['path'],'21');}    
