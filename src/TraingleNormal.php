@@ -1,6 +1,6 @@
-<?php namespace Triangle;
+<?php namespace Triangle; // 6170947621 Peerawut Luengruengroj
 class TriangleNormal{
-    private $A,$B,$C;
+    private $A,$B,$C;  
     public function __construct(int $A,int $B,int $C){
         $this->A = $A;
         $this->B = $B;

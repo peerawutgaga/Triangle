@@ -1,4 +1,4 @@
-<?php namespace Triangle;
+<?php namespace Triangle; // 6170947621 Peerawut Luengruengroj
 class Triangle{
     private $A,$B,$C;
     public function __construct(int $A,int $B,int $C){
