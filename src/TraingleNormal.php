@@ -9,13 +9,13 @@ class TriangleNormal{
 public function getType(): array{
     $answer = array('path'=>array(), 'answer'=> 'out of range' );
     $isOutOfRange = false;
-    if(!($this->C >= 1 && $this->C <= 200)){    
+    if($this->C < 1 || $this->C > 200){    
         $answer['answer'] = 'C '.$answer['answer'];
         $isOutOfRange = true;}
-    if(!($this->B >= 1 && $this->B <= 200)){ 
+    if($this->B < 1 || $this->B > 200){ 
         $answer['answer'] = 'B '.$answer['answer'];
-        $isOutOfRange = True;}    
-    if(!($this->A >= 1 && $this->A <= 200)){
+        $isOutOfRange = true;}    
+    if($this->A < 1 || $this->A > 200){
         $answer['answer'] = 'A '.$answer['answer'];
         $isOutOfRange = true;}
     if(!$isOutOfRange)

@@ -11,17 +11,17 @@ public function getType(): array{
     $isOutOfRange = false;
     array_push($answer['path'],'11');
     array_push($answer['path'],'14');
-    if(!($this->C >= 1 && $this->C <= 200)){    
+    if($this->C < 1 || $this->C > 200){
         $answer['answer'] = 'C '.$answer['answer'];
         $isOutOfRange = true;
         array_push($answer['path'],'16');}
     array_push($answer['path'],'19');
-    if(!($this->B >= 1 && $this->B <= 200)){ 
+    if($this->B < 1 && $this->B > 200){ 
         $answer['answer'] = 'B '.$answer['answer'];
         $isOutOfRange = True;
         array_push($answer['path'],'21');}    
     array_push($answer['path'],'24');
-    if(!($this->A >= 1 && $this->A <= 200)){
+    if($this->A < 1 || $this->A > 200){
         $answer['answer'] = 'A '.$answer['answer'];
         $isOutOfRange = true;
         array_push($answer['path'],'27');} 
